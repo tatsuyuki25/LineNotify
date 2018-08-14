@@ -1,0 +1,27 @@
+<html>
+<script>
+  function() {
+var form = new FormData();
+
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.twitch.tv/helix/webhooks/hub?hub.callback=http://tatsuyuki.byethost11.com/&hub.mode=subscribe&hub.topic=https://api.twitch.tv/helix/users?id=36031670&hub.lease_seconds=0",
+  "method": "POST",
+  "headers": {
+    "Client-ID": "2pzj2unzi26jmzmfqba34dtl9s9et6",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "8c778235-e3b6-46db-84af-6b89e64091f8"
+  },
+  "processData": false,
+  "contentType": false,
+  "mimeType": "multipart/form-data",
+  "data": form
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+  }
+</script>
+</html>
